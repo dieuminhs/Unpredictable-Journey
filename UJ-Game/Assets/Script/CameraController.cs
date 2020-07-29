@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public Transform target;
-    public float smoothing;
+    public float smoothing = 0f;
     public Vector2 minPosition;
     public Vector2 maxPosition;
 
