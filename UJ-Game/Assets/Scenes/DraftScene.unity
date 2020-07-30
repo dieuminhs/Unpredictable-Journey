@@ -1125,6 +1125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 50
   maxHealth: 50
+  flashLength: 0.5
 --- !u!1 &2041914046
 GameObject:
   m_ObjectHideFlags: 0
