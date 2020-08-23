@@ -8,10 +8,12 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     [SerializeField]
     private float speed = 0f;
-
+    private GameObject skillOne;
     // Start is called before the first frame update
     void Start()
     {
+        skillOne = GameObject.Find("Fear");
+        skillOne.SetActive(false);
         r2 = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -33,5 +35,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         r2.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed * Time.deltaTime;
+    }
+
+    public void CastAble()
+    {
+        skillOne.SetActive(true);
     }
 }
