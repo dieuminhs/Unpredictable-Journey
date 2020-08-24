@@ -69,4 +69,9 @@ public class AIFrogMovement : MonoBehaviour
             animator.SetBool("isJumping", false);
         }
     }
+
+    public void Fear()
+    {
+        speed *= -1;
+    }
 }

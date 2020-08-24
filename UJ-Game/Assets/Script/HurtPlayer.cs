@@ -51,7 +51,6 @@ public class HurtPlayer : MonoBehaviour
         if (other.collider.tag == "Player")
         {
             healthManage.HurtPlayer(damageToGive);
-            
         }
         
     }
