@@ -22,7 +22,7 @@ public class ParticleLauncher : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Z))
         {
-            skillTimeout = 5.0f;
+            skillTimeout = 3.0f;
             particleLauncher.Emit(1);
         }
     }
