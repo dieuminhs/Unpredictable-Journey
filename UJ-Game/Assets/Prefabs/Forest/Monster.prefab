@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0ed5cc7acd461408485ecebebc76e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   playerPos: {fileID: 0}
   maxRange: 6
   minRange: 0.95
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0ed5cc7acd461408485ecebebc76e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   playerPos: {fileID: 0}
   maxRange: 6
   minRange: 0.95

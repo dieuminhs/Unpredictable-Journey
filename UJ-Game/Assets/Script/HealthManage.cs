@@ -65,4 +65,9 @@ public class HealthManage : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    public void Restore()
+    {
+        currentHealth = 50;
+    }
 }
