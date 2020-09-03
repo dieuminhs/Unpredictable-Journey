@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float speed = 0.0f;
     private GameObject skillOne;
+    public bool skillTwo;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if (skillTwo)
+            {
+                CastSkillTwo();
+            }
+        }
         animator.SetFloat("moveX", r2.velocity.x);
         animator.SetFloat("moveY", r2.velocity.y);
 
@@ -40,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     public void CastAble()
     {
         skillOne.SetActive(true);
+        skillTwo = true;
     }
 
     public void Freeze()
@@ -50,5 +59,10 @@ public class PlayerMovement : MonoBehaviour
     public void Unfreeze()
     {
         speed = 200.0f;
+    }
+
+    public void CastSkillTwo()
+    {
+        transform.GetChild(1).gameObject.SetActive(true);
     }
 }
