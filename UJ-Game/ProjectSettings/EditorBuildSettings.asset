@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/House.unity
     guid: 8712c33ad6e387547aaa19dc65609784
   - enabled: 1
-    path: Assets/Scenes/Forest.unity
+    path: Assets/Prefabs/Forest/Forest.unity
     guid: 9b480e6c1b20a6045bb3e0b91af1273a
   m_configObjects: {}
