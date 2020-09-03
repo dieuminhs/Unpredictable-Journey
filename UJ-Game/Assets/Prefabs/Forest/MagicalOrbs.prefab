@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 6392536344358158947}
   - component: {fileID: 2792728466383720423}
   m_Layer: 0
-  m_Name: orbs_3
+  m_Name: orbs_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 2491480278579259638}
   - component: {fileID: 2123148564861053695}
   - component: {fileID: 1927488519722694223}
-  - component: {fileID: 2792728466556483648}
+  - component: {fileID: 1611170792}
   m_Layer: 0
   m_Name: orbs_2
   m_TagString: Untagged
@@ -478,7 +478,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.03}
   serializedVersion: 2
   m_Radius: 0.41
---- !u!114 &2792728466556483648
+--- !u!114 &1611170792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -487,9 +487,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4109859199074584967}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efb3b4ea3af07894fbe02587c8df4d91, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fd7904e85d2b9b4ca992e7dcc27ed6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+    name: God
+    sentences:
+    - Congratulation you got the Key Orb. You feel like something has vanished.
 --- !u!1 &6326610781984226834
 GameObject:
   m_ObjectHideFlags: 0

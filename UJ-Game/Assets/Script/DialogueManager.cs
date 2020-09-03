@@ -23,10 +23,18 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            DisplayNextSentence();
+        }
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
 
-        playerMovement.Freeze();
+
 
         animator.SetBool("IsOpen", true);
 

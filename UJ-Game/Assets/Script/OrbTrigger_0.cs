@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OrbTrigger_2 : MonoBehaviour
+public class OrbTrigger_0 : MonoBehaviour
 {
 
     public Dialogue dialogue;
