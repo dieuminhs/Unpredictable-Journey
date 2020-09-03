@@ -2,11 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SantaTrigger : MonoBehaviour
+public class OrbTrigger_3 : MonoBehaviour
 {
 
     public Dialogue dialogue;
     private Rigidbody2D r2;
+
+
+
+    void Start()
+    {
+
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,8 +21,7 @@ public class SantaTrigger : MonoBehaviour
         {
 
             TriggerDialogue();
-
-
+            Destroy(gameObject);
         }
     }
 
