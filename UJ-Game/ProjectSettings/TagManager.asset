@@ -52,3 +52,6 @@ TagManager:
   - name: Skills
     uniqueID: 1937261061
     locked: 0
+  - name: Dialogue
+    uniqueID: 1692750759
+    locked: 0

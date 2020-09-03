@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D r2;
     private Animator animator;
     [SerializeField]
-    private float speed = 0f;
+    private float speed = 0.0f;
     private GameObject skillOne;
     // Start is called before the first frame update
     void Start()
@@ -40,5 +40,15 @@ public class PlayerMovement : MonoBehaviour
     public void CastAble()
     {
         skillOne.SetActive(true);
+    }
+
+    public void Freeze()
+    {
+        speed = 0.0f;
+    }
+
+    public void Unfreeze()
+    {
+        speed = 200.0f;
     }
 }
